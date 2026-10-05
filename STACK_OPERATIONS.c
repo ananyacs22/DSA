@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define MAX 10
+#define MAX 3
 int top=-1;
 int stack[MAX];
 void push();
