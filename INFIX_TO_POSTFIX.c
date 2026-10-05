@@ -31,7 +31,7 @@ int precedence(char symbol) {
         return 0;
     }
 }
-void infixtopostfix(char infix[]) {
+void infixToPostfix(char infix[]) {
     char x;
     printf("Postfix Expression: ");
     for (int i = 0; infix[i] != '\0'; i++) {
@@ -59,9 +59,8 @@ void infixtopostfix(char infix[]) {
 }
 int main() {
     char infix[MAX];
-    printf("Enter Infix Expression (e.g., A+B*(C^D-E)): ");
+    printf("Enter Infix Expression: ");
     scanf("%s", infix);
     infixToPostfix(infix);
     return 0;
 }
-
