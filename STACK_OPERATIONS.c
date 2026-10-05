@@ -41,7 +41,7 @@ void display(){
 }
 int main(){
     while(1){
-        printf("\t\tSTACK MENU\n1.PUSH\n2.POP\n3.DISPALY\n4.EXIT\n");
+        printf("\n\t\tSTACK MENU\n1.PUSH\n2.POP\n3.DISPALY\n4.EXIT\n");
         int choice;
         printf("Enter your choice(1-4):");
         scanf("%d",&choice);
