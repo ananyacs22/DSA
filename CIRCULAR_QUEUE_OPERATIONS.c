@@ -11,6 +11,7 @@ void enqueue(){
     else{
         if(front==-1&&rear==-1){
             front=0;
+            rear=0;
         }
         else if(front!=0&&rear==max-1)
             rear=0;
@@ -26,7 +27,7 @@ void dequeue(){
         if(front==-1){
             printf("QUEUE UNDERFLOW!!..\n");
         }
-        printf("%d is deleted from the queue\n",queue[front] );
+        printf("%d is deleted from the queue\n",queue[front]);
         if(front==rear){
             front=-1;
             rear=-1;
@@ -41,8 +42,11 @@ void display(){
         printf("QUEUE EMPTY NOTHING TO DISPLAY!!.\n");
     }
     else{
-        for(int i=front;i>rear;i++){
+        for(int i=front;;i++){
             printf("%d\t",queue[i]);
+            if(i==rear){
+                break;
+            }
         }
     }
 }
