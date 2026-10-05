@@ -62,5 +62,5 @@ int main(){
             printf("INVALID CHOICE!\n");
         }
     }
-    return 0
+    return 0;
 }
