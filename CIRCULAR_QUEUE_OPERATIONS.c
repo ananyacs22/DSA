@@ -1,6 +1,6 @@
 #include<stdio.h>
 #include<stdlib.h>
-#define max 5
+#define max 3
 int front=-1;
 int rear=-1;
 int queue[max];
@@ -42,7 +42,7 @@ void display(){
         printf("QUEUE EMPTY NOTHING TO DISPLAY!!.\n");
     }
     else{
-        for(int i=front;;i++){
+        for(int i=front;;i=(i+1)%max){
             printf("%d\t",queue[i]);
             if(i==rear){
                 break;
