@@ -34,7 +34,7 @@ void display(){
         }
     else{
         printf("Stack Elements Are:\n");
-        for(int i=top;i>=0;i--){
+        for(int i=0;i<=top;i++){
             printf("%d\t",stack[i]);
         }
     }
