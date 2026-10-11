@@ -16,7 +16,7 @@ void enqueue(){
         else if(front!=0&&rear==max-1)
             rear=0;
         else
-            rear++;
+            rear=(rear+1)%max;
         int val;
         printf("Enter a value to insert:");
         scanf("%d",&val);
